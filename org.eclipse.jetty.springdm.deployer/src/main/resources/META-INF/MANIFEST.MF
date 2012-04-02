@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Export-Package: org.springframework.osgi.web.deployer.jetty8;version="
+ 0.0.1";uses:="org.eclipse.jetty.webapp,org.osgi.framework,org.springf
+ ramework.osgi.web.deployer,org.springframework.osgi.web.deployer.supp
+ ort"
+Import-Bundle: org.apache.cxf.bundle-jaxrs
+Bundle-Vendor: Osgiliath Inc.
+Fragment-Host: org.springframework.osgi.web
+Bundle-Version: 0.0.1
+Tool: Bundlor 1.0.0.RELEASE
+Bundle-Name: org.eclipse.jetty.springdm.deployer
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: org.eclipse.jetty_org.eclipse.jetty.springdm.depl
+ oyer
+Import-Package: javax.servlet,org.eclipse.jetty.server,org.eclipse.jet
+ ty.server.handler,org.eclipse.jetty.util,org.eclipse.jetty.util.resou
+ rce,org.eclipse.jetty.webapp,org.osgi.framework,org.slf4j,org.springf
+ ramework.osgi.util,org.springframework.util
+

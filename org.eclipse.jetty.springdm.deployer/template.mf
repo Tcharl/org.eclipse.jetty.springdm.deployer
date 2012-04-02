@@ -1,0 +1,10 @@
+Bundle-ManifestVersion: 2
+Bundle-Name: ${project.artifactId}
+Bundle-Vendor: Osgiliath Inc.
+Bundle-SymbolicName: ${project.groupId}_${project.artifactId}
+Bundle-Version: ${project.version}
+Fragment-Host: org.springframework.osgi.web
+Import-Bundle: org.apache.cxf.bundle-jaxrs
+Import-Package: org.eclipse.jetty.server, org.eclipse.jetty.webapp, org.eclipse.jetty.util.resource, org.eclipse.jetty.util, org.eclipse.jetty.server.handler,org.slf4j
+Excluded-Imports: org.springframework.osgi.web.deployer, org.springframework.osgi.web.deployer.internal.support, org.springframework.osgi.web.deployer.internal.util, org.springframework.osgi.web.deployer.support
+Export-Package: org.springframework.osgi.web.deployer.jetty8
