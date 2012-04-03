@@ -177,7 +177,7 @@ public class Jetty8WarDeployer extends AbstractWarDeployer {
 		} catch (IOException e) {
 			System.out.println(e.getMessage());
 		}
-		wac.setDefaultsDescriptor(properties.getProperty("webDefault.location"));//wac.getClassPath()+"/../../webdefault.xml");
+		wac.setDefaultsDescriptor("webdefault.xml"/*properties.getProperty("webDefault.location")*/);//wac.getClassPath()+"/../../webdefault.xml");
 
 		//
 		// 1. resource settings
